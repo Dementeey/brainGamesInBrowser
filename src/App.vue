@@ -5,7 +5,8 @@
 </template>
 
 <script>
-import headerComp from './components/header,vue'
+import headerComp from './containers/header/headerComp.vue'
+
 export default {
   components: {
     headerComp
@@ -13,23 +14,24 @@ export default {
   name: 'app',
   data () {
     return {
-      msg: 'Welcome to Your Vue.js App'
     }
   }
 }
 </script>
 
-<style lang="less" scopedSlots>
+<style lang="less">
   @import './assets/mixin.less';
   @import './assets/var.less';
 
   html,
   body {
     .mp(0, 0);
+    font-family: @mainFont;
+    font-size: 24px;
   }
   #app {
     width: 100%;
     height: 100vh;
-    background: #E8E8E8;
+    background: @colorGray;
   }
 </style>
