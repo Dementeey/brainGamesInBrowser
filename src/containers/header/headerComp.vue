@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div id="header">
     <mainNav></mainNav>
     <social></social>
   </div>
@@ -24,7 +24,7 @@ export default {
 <style lang="less" scoped>
   @import '../../assets/var.less';
   @import '../../assets/mixin.less';
-.container {
+#header {
   display: flex;
   flex-direction: row;
   background: @colorWhite;

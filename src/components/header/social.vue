@@ -1,8 +1,8 @@
 <template>
   <div class="social">
-    <a class="socialItem fb" href=""></a>
-    <a class="socialItem in" href=""></a>
-    <a class="socialItem git" href=""></a>
+    <a class="socialItem fb" href="#" title="facebook" target="_blank"></a>
+    <a class="socialItem in" href="#" title="linkedin" target="_blank"></a>
+    <a class="socialItem git" href="#" title="github" target="_blank"></a>
   </div>
 </template>
 
@@ -24,6 +24,7 @@ export default {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
   min-width: 100px;
 }
 .socialItem {
@@ -36,5 +37,6 @@ export default {
 .socialItem:hover {
   transform: scale(1.2);
   background-color: @colorPink;
+  color: @colorGreen;
 }
 </style>
