@@ -4,7 +4,7 @@
 
 ## Build Setup
 
-### NPM  5.6.0  NODE  8.11.1
+### NPM  5.6.0  NODE  8.11.4
 
 ``` bash
 # install dependencies
@@ -17,4 +17,4 @@ npm run dev
 npm run build
 ```
 
-For detailed explanation on how things work, consult the [docs for vue-loader](http://vuejs.github.io/vue-loader).
+conversion [engine for npm](https://github.com/Dementeey/project-lvl1-s236), for a web browser 
