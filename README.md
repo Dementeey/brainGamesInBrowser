@@ -1,6 +1,4 @@
-# brain-games
-
-> A Vue.js project
+# Brain Games in Browser
 
 ## Build Setup
 

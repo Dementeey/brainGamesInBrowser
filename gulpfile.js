@@ -27,15 +27,14 @@ const path = {
   },
   src: {                                    // Пути откуда брать исходники
     html: 'src/**/*.html',                  // Синтаксис src/**/*.html говорит gulp что мы хотим взять все файлы с расширением .html из всех папок после src
-    js: 'src/js/*.js',
+    js: 'src/js/**/*.js',
     style: 'src/sass/index.sass',        // for SASS
     img: 'src/img/**/*.+(png|jpg)',             // Синтаксис img/**/*.* означает - взять все файлы всех расширений
-    svg: 'src/img/**/*.svg',                // Синтаксис img/**/*.* означает - взять все файлы всех расширений
-
+    svg: 'src/img/**/*.svg'                // Синтаксис img/**/*.* означает - взять все файлы всех расширений
   },
   watch: {                                  // Тут мы укажем, за изменением каких файлов мы хотим наблюдать
     html: 'src/**/*.html',
-    js: 'src/**/*.js',
+    js: 'src/js/**/*.js',
     style: 'src/**/*.sass',              // for SASS
     img: 'src/img/**/*.+(png|jpg)',
     svg: 'src/img/**/*.svg'

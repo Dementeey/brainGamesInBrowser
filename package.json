@@ -1,7 +1,7 @@
 {
   "name": "brain-games-in-browser",
   "version": "0.0.1",
-  "description": "Brain Games In Browser with Vue.js",
+  "description": "Brain Games in Browser",
   "scripts": {
     "dev": "browser-sync start --server --files 'css/*.css'",
     "start": "gulp",
@@ -43,9 +43,5 @@
     "imagemin-pngquant": "^5.1.0",
     "normalize.css": "^8.0.0",
     "rimraf": "^2.3.1"
-  },
-  "dependencies": {
-    "hexlet-pairs": "^1.0.5",
-    "readline-sync": "^1.4.9"
   }
 }
