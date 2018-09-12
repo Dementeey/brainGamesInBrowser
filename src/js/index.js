@@ -4,7 +4,10 @@ const modalOverlay = document.querySelector('.hello__overlay');
 const nameGamesList = document.querySelectorAll('.game-container__side-bar-item');
 const nameGamesActiveName = document.querySelector('.nameGames__activeName');
 
-const closeModal = () => helloModal.classList.add('hello--close');
+const closeModal = () => {
+  helloModal.classList.add('hello--close');
+  sessionStorage.setItem('closeModal', 'true');
+};
 
 const createNewScript = (value) => {
   const script = document.querySelector(`script[src='${value}']`);
@@ -50,6 +53,14 @@ const addNameInTitle = (ev) => {
 
 modalBtnClose.addEventListener('click', closeModal);
 modalOverlay.addEventListener('click', closeModal);
+document.addEventListener('keydown', (e) => {
+  const codeKey = e.keyCode || e.key || e.which;
+
+  if (codeKey === 27 || codeKey === 'Escape') {
+    e.preventDefault();
+    closeModal();
+  }
+});
 for (let i = 0; i < nameGamesList.length; i += 1) {
   nameGamesList[i].addEventListener('click', () => {
     addNameInTitle(nameGamesList[i]);

@@ -30,6 +30,9 @@
     color: $main-color
     z-index: 103
 
+    border-radius: 5px
+    box-shadow: 0 0 5px 5px $gray
+
     &-close
       position: absolute
       top: 10px
@@ -65,7 +68,12 @@
       &:active::after
         box-shadow: 0 0 10px 5px $gray
 
-
+      span
+        position: absolute
+        top: 24px
+        left: 5px
+        font-size: 8px
+        color: $main-color
 
     &-content
       padding-top: 80px
